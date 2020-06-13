@@ -1,0 +1,115 @@
+html {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  overflow-x: hidden;
+  background-color: #39404A;
+}
+
+body {
+  overflow-y: hidden;
+  margin: 0;
+  padding: 0;
+  height: 400vh;
+  z-index: -11;
+}
+
+.nav-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 90vw;
+  margin: 10px auto;
+  height: 15vh;
+}
+
+.nav-wrapper header {
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.nav-wrapper h1 {
+  color: #FFE7F1;
+  font-family: 'Zefani';
+  font-size: 3rem;
+}
+
+.nav-wrapper ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+}
+
+.nav-wrapper li {
+  margin-left: 25px;
+  font-family: 'Aileron';
+  color: #FFE7F1;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  cursor: pointer;
+}
+
+.nav-wrapper li:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(-18.92%, #9351BB), color-stop(49.95%, #FF86B9), color-stop(120.27%, #FF8C8C));
+  background: linear-gradient(90deg, #9351BB -18.92%, #FF86B9 49.95%, #FF8C8C 120.27%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.feathers-wrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+
+.feathers-wrapper .feathers-front {
+  position: absolute;
+  top: 0;
+  background-image: url(../feathers-front.PNG);
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+}
+
+.feathers-wrapper .feathers-middle {
+  position: absolute;
+  top: 0;
+  background-image: url(../feathers-middle.PNG);
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  z-index: 2;
+}
+
+.feathers-wrapper .feathers-back {
+  position: absolute;
+  top: 0;
+  background-image: url(../feathers-back.png);
+  background-size: contain;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+footer {
+  background-color: #FFE7F1;
+  height: 30vh;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*# sourceMappingURL=style.css.map */

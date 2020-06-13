@@ -1,230 +1,39 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-    <title>
-        Home | TMFBrand
-    </title>
-    <link rel="icon" type="image/png" href="title_logo_white.png">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feathers</title>
+    <link rel="stylesheet" href="./styles/style.css">
 </head>
 
-
 <body>
-    <nav class="right-side-mobile" id="right-side-mobile">
-        <ol>
-            <li class="nav-link-wrapper-mobile">
-                <a href="javascript:void(0)" class="close-button" onclick="closeNav()">&times;</a>
-            </li>
-            <li class="nav-link-wrapper-mobile">
-                <a href="#home-section" onclick="closeNav()">Home</a>
-            </li>
-            <li class="nav-link-wrapper-mobile">
-                <a href="shop.html" onclick="closeNav()">Shop</a>
-            </li>
-            <li class="nav-link-wrapper-mobile">
-                <a href="#about-section" onclick="closeNav()">About</a>
-            </li>
-            <li class="nav-link-wrapper-mobile">
-                <a href="#contact-section" onclick="closeNav()">Contact</a>
-            </li>
-        </ol>
-    </nav>
-    <div class="darken-fill-layer" id="darken-fill-layer"></div>
-    <div class="container" id="home-section">
-        <div class="columns">
-            <div class="column-left">
-                <div class="social-media-bar-wrapper">
-                    <a href="https://facebook.com/tmfbrand/" class="fa fa-facebook" target="_blank"></a>
-                    <a href="https://instagram.com/tickle_my_fancy/" class="fa fa-instagram" target="_blank"></a>
-                </div>
-            </div>
-            <div class="column-middle">
-                <div class="nav-bar">
-                    <div class="left-side">
-                        <a href="index.html">
-                            <img src="title_logo_black.png" alt="tmf">
-                        </a>
-                    </div>
-                    <nav class="right-side">
-                        <ol>
-                            <li class="nav-link-wrapper active-nav-link">
-                                <a href="#home-section">Home</a>
-                            </li>
-                            <li class="nav-link-wrapper">
-                                <a href="shop.html">Shop</a>
-                            </li>
-                            <li class="nav-link-wrapper">
-                                <a href="#about-section">About</a>
-                            </li>
-                            <li class="nav-link-wrapper">
-                                <a href="#contact-section">Contact</a>
-                            </li>
-                        </ol>
-                    </nav>
-                    <div class="menu-button" onclick="openNav()">
-                        <img src="menu-icon.png" alt="Menu">
-                    </div>
-                </div>
-                <div class="home-banner"></div>
-                <div class="nav-bar-sticky-back" id="nav-bar-sticky-back"></div>
-                <div class="about-section" id="about-section">
-                    <div class="about-banner" id="parallax1">
-                        <div class="about-banner-content hidden">
-                            about
-                        </div>
-                    </div>
-                    <div class="about-content">
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
-                            been
-                            the industry's standard dummy text ever since the 1500s, when an unknown printer took a
-                            galley
-                            of type and scrambled it to make a type specimen book. It has survived not only five
-                            centuries,
-                            but also the leap into electronic typesetting, remaining essentially unchanged.
-                        </p>
-                        <p> It was
-                            popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum
-                            passages,
-                            and more recently with desktop publishing software like Aldus PageMaker including versions
-                            of
-                            Lorem Ipsum.
-                        </p>
-                    </div>
-                </div>
-                <div class="contact-section" id="contact-section">
-                    <div class="contact-banner" id="parallax2">
-                        <div class="contact-banner-content hidden">
-                            contact
-                        </div>
-                    </div>
-                    <div class="contact-content">
-                        <div class="left-side-contact-content">
-                            <h1>Leave us a message</h1>
-                            <p></p>
-                            <p>or reach us at</p>
-                            <p><a href="mailto:contact@tmfbrand.com">contact@tmfbrand.com</a></p>
-                        </div>
-                        <div class="right-side-contact-content">
-                            <form action="/action_form.php">
-                                <div class="row">
-                                    <div class="col-25">
-                                        <label for="fname">Full Name</label>
-                                    </div>
-                                    <div class="col-75">
-                                        <input type="text" id="fname" name="fullname" placeholder="Full Name" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-25">
-                                        <label for="email">Email</label>
-                                    </div>
-                                    <div class="col-75">
-                                        <input type="text" id="email" name="email" placeholder="Email" required>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <div class="col-25">
-                                        <label for="message">Message</label>
-                                    </div>
-                                    <div class="col-75">
-                                        <textarea id="message" name="message" placeholder="Write something.."
-                                            style="min-height:20vmin" required></textarea>
-                                    </div>
-                                </div>
-                                <div class="row">
-                                    <input type="submit" value="Submit">
-                                </div>
-                            </form>
-
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="column-right"></div>
-        </div>
-        <div class="footer">
-            <div class="footer-top-spacer"></div>
-            <div class="site-nav">
-                <div class="site-nav-link-wrapper">
-                    <a href="#home-section">Home</a>
-                </div>
-                <div class="site-nav-link-wrapper">
-                    <a href="shop.html">Shop</a>
-                </div>
-                <div class="site-nav-link-wrapper">
-                    <a href="#about-section">About</a>
-                </div>
-                <div class="site-nav-link-wrapper">
-                    <a href="#contact-section">Contact</a>
-                </div>
-            </div>
-            <div class="social-media-footer">
-                <hr>
-                <a href="https://facebook.com/tmfbrand/" class="fa fa-facebook" target="_blank"></a>
-                <a href="https://instagram.com/tickle_my_fancy/" class="fa fa-instagram" target="_blank"></a>
-                <hr>
-            </div>
-            <div class="copyright">
-                &copy; 2020 Tickle My Fancy
-            </div>
-            <div class="footer-bottom-spacer"></div>
-        </div>
+    <div class="nav-wrapper">
+        <header>
+            <h1>tmf</h1>
+            <nav>
+                <ul>
+                    <li>Home</li>
+                    <li>Shop</li>
+                    <li>About</li>
+                    <li>Contact</li>
+                </ul>
+            </nav>
+        </header>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script>
-        $(document).ready(function () {
-            $("a").on('click', function (event) {
-                if (this.hash !== "") {
-                    event.preventDefault();
-                    var hash = this.hash;
-                    $('html, body').animate({
-                        scrollTop: $(hash).offset().top
-                    }, 800, function () {
-                        window.location.hash = hash;
-                    });
-                }
-            });
-        });
-        var windowHeight = window.innerHeight;
-        var parallax1 = document.getElementById("parallax1");
-        var parallax2 = document.getElementById("parallax2");
-        window.addEventListener("scroll", function () {
-            let offset = window.pageYOffset;
-            let positionFromBottom1 = parallax1.getBoundingClientRect().bottom;
-            let positionFromBottom2 = parallax2.getBoundingClientRect().bottom;
-            parallax1.style.backgroundPositionY = offset * 0.5 + "px";
-            parallax2.style.backgroundPositionY = offset * 0.5 + "px";
-            if (positionFromBottom1 - windowHeight <= 0) {
-                parallax1.childNodes[1].classList.remove('hidden');
-                parallax1.childNodes[1].classList.add('reveal');
-            }
-            if (positionFromBottom2 - windowHeight <= 0) {
-                parallax2.childNodes[1].classList.remove('hidden');
-                parallax2.childNodes[1].classList.add('reveal');
-            }
-        });
-        function openNav() {
-            document.getElementById("right-side-mobile").style.width = "90vw";
-            document.getElementById("darken-fill-layer").style.backgroundColor = "rgba(0,0,0,0.7)";
-            document.getElementById("darken-fill-layer").style.zIndex = "100";
-            document.getElementById("darken-fill-layer").style.width = "100vw";
-            document.getElementById("darken-fill-layer").style.height = "100vh";
-            document.getElementsByTagName("body")[0].style.overflow = "hidden";
-        }
-        function closeNav() {
-            document.getElementById("right-side-mobile").style.width = "0";
-            document.getElementById("darken-fill-layer").style.backgroundColor = "rgba(0,0,0,0)";
-            document.getElementById("darken-fill-layer").style.zIndex = "100";
-            document.getElementById("darken-fill-layer").style.width = "0";
-            document.getElementById("darken-fill-layer").style.height = "0";
-            document.getElementsByTagName("body")[0].style.overflow = "visible";
-        }
-    </script>
-</body>
 
+    <div class="feathers-wrapper">
+        <div class="feathers-front rellax" data-rellax-speed='-4'></div>
+        <div class="feathers-middle rellax" data-rellax-speed='-7'></div>
+        <div class="feathers-back rellax" data-rellax-speed='-10'></div>
+    </div>
+
+    <!-- <footer> -->
+    <!-- </footer> -->
+    <script src="./rellax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+    <script src="./app.js"></script>
+</body>
 
 </html>
