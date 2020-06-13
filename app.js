@@ -1,38 +1,28 @@
-// let innerHeight = window.innerHeight;
-// let innerWidth = window.innerWidth;
-
-// function createFeathers(number, blurArray) {
-//     for (let index = 0; index < number; index++) {
-//         var newImage = document.createElement("img");
-//         let randNum = gsap.utils.random(0, 23).toFixed(0);
-//         newImage.src = "./feathers/feather" + randNum + ".png";
-//         newImage.classList.add("el");
-//         newImage.classList.add("rellax");
-//         newImage.setAttribute("data-rellax-speed", 10 - blurArray[index]);
-//         document.body.insertBefore(newImage, document.querySelector("script"));
-//     }
-// }
-
-// var blurArray = new Array(30);
-
-// for (let index = 0; index < 30; index++) {
-//     blurArray[index] = gsap.utils.random(0, 10);
-// }
-
-
-// createFeathers(30, blurArray);
-
 var rellax = new Rellax(".rellax");
 
-// let array = document.querySelectorAll(".el");
+feather.replace();
 
-// for (let index = 0; index < array.length; index++) {
-//     const element = array[index];
-//     gsap.set(element, {
-//         left: gsap.utils.random(0, innerWidth),
-//         top: gsap.utils.random(0, innerHeight),
-//         width: (15 - blurArray[index].toFixed(0)) + "%",
-//         filter: "blur(" + blurArray[index] + "px)",
-//         zIndex: 0 - blurArray[index].toFixed(0)
-//     });
-// };
+var tl = gsap.timeline();
+
+tl.fromTo(".feathers-front",
+    { y: -300, opacity: 0 },
+    { duration: 3, ease: "expo.out", y: 0, opacity: 1 })
+    .fromTo(".feathers-middle",
+        { y: -200, opacity: 0 },
+        { duration: 3, ease: "expo.out", y: 0, opacity: 1 },
+        "-=3")
+    .fromTo(".feathers-back",
+        { y: -100, opacity: 0 },
+        { duration: 3, ease: "expo.out", y: 0, opacity: 1 },
+        "-=3")
+    .fromTo(".nav-wrapper",
+        { y: -100, opacity: 0 },
+        { duration: 3, ease: "elastic.out(1, 0.75)", y: 0, opacity: 1 },
+        "-=2")
+    .fromTo(".call-to-action",
+        { y: -20, opacity: 0 },
+        { duration: 3, ease: "elastic.out(1, 0.75)", y: 0, opacity: 1 },
+        "-=2")
+    .to(".call-to-action .feather-arrow-down-circle",
+        { duration: 0.75, y: -10, repeat: -1, yoyo: true },
+        "-=2");
